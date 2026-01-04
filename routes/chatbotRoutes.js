@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
     }
 
     // Use `gemini-1.5-pro` instead of `gemini-pro`
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
     // Generate response using correct format
     const result = await model.generateContent({

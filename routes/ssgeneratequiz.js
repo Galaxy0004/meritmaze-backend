@@ -16,7 +16,7 @@ router.post("/generate", async (req, res) => {
   try {
     // CHANGE 1: Use the more efficient 'flash' model suitable for the free tier
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash-latest",
+      model: "gemini-2.5-flash-lite",
       generationConfig: {
         responseMimeType: "application/json",
       },
